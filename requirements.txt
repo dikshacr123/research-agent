@@ -1,0 +1,8 @@
+streamlit
+requests
+duckduckgo-search
+wikipedia-api
+yfinance
+python-dotenv
+google-generativeai
+python-multipart
