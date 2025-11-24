@@ -24,6 +24,8 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+def clear_text_input():
+    st.session_state.user_input = ""
 # Custom CSS
 st.markdown("""
     <style>
@@ -282,7 +284,6 @@ with tab1:
                     'type': 'text',
                     'timestamp': datetime.now().isoformat()
                 })
-        
         save_conversation_history(st.session_state.messages)
         st.rerun()
     
